@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color:black
+}
+
+.want{
+    padding: 40px 40px;
+    background-color: white;
+  color: brown;
+  font-size: 30px;
+  margin: 40px 150px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.want::before{
+    content: "300";
+    width: 50%;
+    height: 100%;
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    z-index: -1;
+    transition: 1s;
+}
+.want::after{
+    content: "$";
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    right: -50%;
+    z-index: -1;
+    transition: 1s;    
+}
+.want:hover::before {
+    left: 0;
+}
+.want:hover::after {
+    right: 0;
+}
+
+.logo{
+    padding: 30px 40px;
+    background-color: red;
+    font-size: 30px;
+    color: blue;
+    margin: 40px 150px;
+    display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.logo::before{
+    content: "300";
+    width: 100%;
+    height: 50%;
+    background-color:chartreuse;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+}
+.logo::after{
+    content: "$";
+width: 100%;
+height: 50%;
+background-color: aqua;
+position: absolute;
+bottom: -50%;
+left: 0;
+z-index: -1;
+display: inline-block;
+transition: 1s;
+
+}
+.logo:hover::before{
+    top:0;
+}
+.logo:hover::after{
+    bottom: 0;
+}
+.mont{
+    padding: 40px 40px;
+    color: brown;
+    font-size: 30px;
+    margin: 40px 150px;
+    display: inline-block;
+  position: relative;
+  z-index: 1;
+
+}
+.mont::before{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: bisque;
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    z-index: -1;
+    display: inline-block;
+    transition: 1s;
+}
+.mont::after{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: rgb(102, 255, 6);
+    position: absolute;
+    bottom:-25%;
+    right:-25%;
+    z-index: -1;
+    display: inline-block;
+    transition: 1s;
+}
+.mont:hover::before{
+    top: 0;
+    left: 0;
+}
+.mont:hover::after{
+    bottom: 0;
+    right: 0;
+}
+
+
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+transition:3s;
+transition-delay:500ms;
+}
+div:hover{
+    width: 400px;
+    background-color: blue;
+}
+#div1{
+    transition-timing-function: linear
+}
+#div2{
+    transition-timing-function: ease;
+}
+#div3{
+    transition-timing-function: ease-in;
+
+}
+#div4{
+    transition-timing-function: ease-out;
+}
+#div5{
+    transition-timing-function: ease-in-out;
+}
+
+.ert{
+    width: 100px;
+height: 100px;
+background-color: blueviolet;
+align-items: center;
+text-align: center;
+transition-delay: 2s;
+}
+.ert:hover{
+    background-color: aqua;
+    transition: 2s;
+    width: 150px;
+    height: 150px;
+
+
+}
+button{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    background-color: blue;
+}
+button:hover{
+    background-color: brown;
+    transition: 1s;
+}
